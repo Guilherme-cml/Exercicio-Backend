@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const totalEleitores = Number(prompt('Digite a quantidade de eleitores'))
+        const brancos = Number(prompt('Digite a quantidade de votos BRANCOS'))
+        const nulos = Number( prompt('Digite a quantidade de votos NULOS'))
+        const validos = Number(prompt('Digite a quantidade de votos VÁLIDOS'))
+        
+        const soma = nulos + brancos + validos
+        const msg = soma != totalEleitores ? 'Erro: Quantidade inválida' : 'Quantidade correta de votos' 
+        alert(msg)
+        
+        const parcBranco = brancos / totalEleitores * 100
+        const parcnulos = nulos / totalEleitores * 100
+        const parcvalidos = validos / totalEleitores * 100
+    
+        alert(`Brancos: ${parcBranco}%, Nulos: ${parcnulos}%,  Válidos:${parcvalidos}%`)
+
+    
+       
+        </script>
+</body>
+</html>

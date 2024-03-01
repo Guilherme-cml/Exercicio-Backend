@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const salario = Number(prompt('Digite seu salário'))
+        const carros = Number(prompt('Digite a quantidade de carros vendidos'))
+        const vendas = Number(prompt('Digite o valor total de suas vendas'))
+        const comissao = Number(prompt('Digite sua comissão por carro vendido'))
+
+        const salarioFinal = salario + ((5*vendas)/100) + (comissao * carros)
+
+        alert(`Seu salário será R$${salarioFinal}`)
+
+    </script>
+</body>
+</html>
